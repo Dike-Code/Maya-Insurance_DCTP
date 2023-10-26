@@ -1,0 +1,28 @@
+/** @format */
+// Success page
+.brand-logo{
+    .logo{
+        color: $secondary;
+    }
+}
+.active{
+    border-bottom: 2px solid $primary;
+    padding: 5px 0;
+}
+
+.success{
+    min-height: 55vh;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 1.25em;
+    align-items: center;
+
+    .hero-txt{
+        font-size: $para;
+        margin: 65px 0;
+    }
+
+    .heroBtn{
+        color: $white;
+    }
+}
