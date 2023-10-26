@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    max-width:1200px;
+    margin:auto;
+    padding: 0 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+}
+
+.highlgt{
+    color:$primary
+}
+
+.btn{
+    padding: 15px 20px;
+    border: 0;
+    border-radius:50px;
+    background: $primary;
+}
