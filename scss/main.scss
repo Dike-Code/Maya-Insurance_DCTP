@@ -1,0 +1,26 @@
+// @import "./architectures/_variables";
+// @import "./architectures/_reset";
+// @import "./architectures/_base";
+// @import "./architectures/_typography";
+// @import "./architectures/_utilities";
+// @import "./architectures/_landing_page";
+// @import "./architectures/_success_page";
+
+//Abstract files
+@import "./architectures/abstract/variables", "./architectures/abstract/mixins", "./architectures/abstract/functions";
+
+//Base files
+@import "./architectures/base/base", "./architectures/base/reset",  "./architectures/base/typography";
+
+//Component files
+@import "./architectures/components/header";
+
+//Layout files
+// @import "./layout/";
+
+//Pages files
+@import "./architectures/pages/landing_page", "./architectures/pages/success_page", "./architectures/pages/pages";
+
+//Theme files
+@import "./architectures/theme/media_queries", "./architectures/theme/utilities";
+
