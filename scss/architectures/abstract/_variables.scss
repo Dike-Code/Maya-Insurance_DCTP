@@ -1,11 +1,16 @@
-
-
     // VARIABLES
 
     // colors
     $primary:#2daac2;
     $secondary:#000919;
+    $text-gray: #D8D8D8;
     $white:#ffffff;
+
+    // font family
+    $rubik: 'Rubik', sans-serif;
+    $inter: 'Inter', sans-serif;
+    $montserrat: 'Montserrat', sans-serif;
+    $poppins: 'Poppins', sans-serif;
 
     // font-size
     $headerX:48px;
@@ -19,4 +24,7 @@
     $veryThick:700;
     $thick:500;
     $thin:400;
-    $veryThin:30
+    $veryThin:30;
+
+    // Widths
+    $maxWidth: 93.7rem;
