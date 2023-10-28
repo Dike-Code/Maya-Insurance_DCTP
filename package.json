@@ -1,9 +1,15 @@
 {
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
     "node-sass": "^9.0.0"
   },
-  "scripts" : {
+  "scripts": {
     "watch-sass": "node-sass main.scss css/main.css --w --r",
-     "compile-sass": "node-sass main.scss css/style.comp.css"
+    "compile-sass": "node-sass main.scss css/style.comp.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
   }
 }
