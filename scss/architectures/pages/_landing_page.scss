@@ -66,11 +66,10 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
-        place-items: center;
     }
 
     .heroImg {
-        max-width: 530px;
+        max-width:700px;
 
         img {
             width: 100%;
@@ -100,13 +99,13 @@
 
 // whyUs section
 .whyChoose {
-    background: #030316;
+    background: $navy;
     width: 100%;
     padding: 50px 0;
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
-        padding:0 0 50px
+         padding:0 0 100px
     }
 
     .card {

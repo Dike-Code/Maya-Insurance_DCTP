@@ -13,12 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:30px;
+    margin: auto;
 }
 
 .highlgt{
