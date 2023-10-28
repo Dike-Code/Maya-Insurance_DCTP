@@ -32,6 +32,13 @@
     background: $primary;
 }
 
+.card {
+    padding: 45px;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
 %btn {
     display: inline-block;
     padding: 15px 20px;
