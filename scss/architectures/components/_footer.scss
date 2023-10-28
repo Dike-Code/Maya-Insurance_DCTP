@@ -1,18 +1,133 @@
-footer {
-  height: 25rem;
+.footer {
+  color: $white;
+  font-family: $rubik;
   width: 100%;
-  padding-inline: 7rem;
+  padding: 7.75rem 7rem 2rem 7rem;
   background-color: $secondary;
 
+  h4 {
+    color: var(--white, #FFF);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
   &__container {
-    max-width: 93.7rem;
     width: 100%;
+    max-width: $maxWidth;
+    margin: auto;
+    @include flex(column, space-between, flex-start, 2.5rem);
   }
 
   .row {
-    @extend %flex;
     width: 100%;
-    justify-content: space-between;
+    @include flex(row, space-between, flex-start, 0rem);
+
+    .col {
+      @include flex(column, flex-start, flex-start, 1.5rem);
+
+      h4 {
+        font-size: 1.25rem;
+      }
+
+      ul {
+        @include flex(column, flex-start, flex-start, 1.25rem);
+      }
+    }
+
+    li a {
+      font-size: 1rem;
+      color: $text-gray;
+    }
+  }
+
+  .row__bottom  {
+    width: 100%;
+    @include flex(row, space-between, flex-start, 0);
+    border-top: 1px solid $text-gray;
+    padding-block: 1.5rem;
+
+    ul {
+      @include flex(row, center, center, 2.5rem);
+      // @extend %flex;
+      // gap: 2.5rem;
+
+      li a {
+        color: $white;
+      }
+    }
   }
 }
 
+
+
+// 320px — 480px: Mobile devices
+
+// 481px — 768px: iPads, Tablets
+
+// 769px — 1024px: Small screens, laptops
+
+// 1025px — 1200px: Desktops, large screens
+
+// 1201px
+
+/*responsive*/
+
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem;
+
+    .row {
+      flex-wrap: wrap;
+  
+      .col {
+        width: 30%;
+  
+        h4 {
+          font-size: 1rem;
+        }
+  
+        ul {
+          @include flex(column, flex-start, flex-start, 1rem);
+        }
+      }
+    }
+  } 
+
+  .row__bottom {
+    @include flex(column, center, center, 1rem);
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  .footer {
+    padding: 1rem;
+
+    .row {
+      @include flex(column, space-between, flex-start, 1rem);
+  
+      .col {
+        width: 30%;
+        gap: 2rem;
+
+        @include flex(column, flex-start, flex-start, 1.5rem);
+  
+        h4 {
+          font-size: 1rem;
+        }
+  
+        ul {
+          @include flex(column, flex-start, flex-start, 1rem);
+        }
+      }
+    }
+  } 
+
+  .row__bottom {
+    @include flex(column, center, center, 1rem);
+  }
+}

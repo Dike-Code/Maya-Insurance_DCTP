@@ -3,7 +3,14 @@
     // colors
     $primary:#2daac2;
     $secondary:#000919;
+    $text-gray: #D8D8D8;
     $white:#ffffff;
+
+    // font family
+    $rubik: 'Rubik', sans-serif;
+    $inter: 'Inter', sans-serif;
+    $montserrat: 'Montserrat', sans-serif;
+    $poppins: 'Poppins', sans-serif;
 
     // font-size
     $headerX:48px;
@@ -19,10 +26,5 @@
     $thin:400;
     $veryThin:30;
 
-    // display
-    %flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+    // Widths
+    $maxWidth: 93.7rem;
