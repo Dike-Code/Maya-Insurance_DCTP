@@ -1,5 +1,3 @@
-
-
     // VARIABLES
 
     // colors
@@ -19,4 +17,12 @@
     $veryThick:700;
     $thick:500;
     $thin:400;
-    $veryThin:30
+    $veryThin:30;
+
+    // display
+    %flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }

@@ -3,4 +3,16 @@ footer {
   width: 100%;
   padding-inline: 7rem;
   background-color: $secondary;
+
+  &__container {
+    max-width: 93.7rem;
+    width: 100%;
+  }
+
+  .row {
+    @extend %flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
+
