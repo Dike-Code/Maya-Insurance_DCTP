@@ -5,6 +5,45 @@
   padding: 7.75rem 7rem 2rem 7rem;
   background-color: $secondary;
 
+  .top-float {
+    max-width: 75rem;
+    margin-inline: auto;
+    padding: 2rem 6.25rem;
+    margin-block: -12rem 7rem;
+    background-color: $primary;
+    border-radius: 1.875rem;
+    @include flex(row, space-between, center, 0);
+
+    div {
+      @include flex(column, center, flex-start, 8px);
+
+      h3 {
+        font-family: $montserrat;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 0;
+      }
+
+      p {
+        font-family: $poppins;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+
+    button {
+      @extend %btn;
+      color: #000919;
+      font-family: $poppins;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.00938rem;
+      background-color: $white;
+    }
+  }
+
   h4 {
     color: var(--white, #FFF);
     font-size: 1.25rem;
