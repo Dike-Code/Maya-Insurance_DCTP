@@ -4,7 +4,7 @@
   width: 100%;
   max-width: $maxWidth;
   margin: auto;
-  background-color: #ccc;
+  background-color: #bbb;
   padding: 6rem 2rem;
   position: relative;
   font-family: $poppins;
@@ -92,6 +92,11 @@
 
         div {
           @include flex(row, center, center, 1.5rem);
+
+          p {
+            font-family: $montserrat;
+            font-weight: 500;
+          }
 
           .line {
             width: 1.5rem;
