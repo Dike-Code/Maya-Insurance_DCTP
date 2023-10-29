@@ -2,16 +2,21 @@
   color: $white;
   height: 100%;
   width: 100%;
+  max-width: $maxWidth;
+  margin: auto;
   background-color: #ccc;
-  padding: 6rem 10rem;
+  padding: 6rem 2rem;
   position: relative;
+  font-family: $poppins;
 
   &__button {
-    width: 8.5rem;
     position: absolute;
-    top: 0;
-    right: 5.5rem;
-    @include flex(row, center, center, 8px);
+    top: 1.5rem;
+    right: 0.5rem;
+    width: 8.5rem;
+    border: none;
+    background-color: transparent;
+    @include flex(row, flex-start, flex-start, 8px);
 
     img {
       width: 1rem;
@@ -20,24 +25,43 @@
   }
 
   main {
-    @include flex(row, space-between, center, 0);
+    @include flex(row, space-between, flex-start, 0);
 
-    header {
+    section {
+      @include flex(column, flex-start, flex-start, 2.5rem);
       max-width: 24rem;
+
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-family: $montserrat;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
     }
 
     form {
       color: black;
-      width: 80%;
+      width: 65%;
       max-width: 55.125rem;
-      max-height: 51.9375rem;
       padding: 3.5rem 6.5rem;
       border-radius: 2.5rem;
       background: rgba(255, 255, 255, 0.80);
       @include flex(column, flex-start, flex-start, 0.5rem);
 
+      a {
+        color: black;
+      }
+
       h2 {
         margin-bottom: 4.5rem;
+      }
+
+      label {
+        font-family: $montserrat;
       }
 
       div {
@@ -58,23 +82,30 @@
           border: none;
           border-radius: 2.5rem;
           align-self: stretch;
+          font-family: $poppins;
         }
-
-
-        
       }
 
       .sign-button {
         @include flex(column, center, center, 1.5rem);
+        margin-block: 2.5rem 1.5rem;
 
         div {
+          @include flex(row, center, center, 1.5rem);
+
           .line {
             width: 1.5rem;
             height: 2px;
           }
         }
-
         
+        .sign {
+          @include flex(row, center, center, 1rem);
+          background-color: transparent;
+          border: 1px solid  #000;
+          color: #000;
+        }
+
         p {
           margin: 0;
         }
@@ -93,5 +124,17 @@
         align-self: center;
       }
     }
+
+  }
+}
+
+
+// RESPONSIVENESS
+$breakpoint-mobile: 568px;
+@media (min-width: $breakpoint-mobile) {
+  .signup main form {
+    width: 100%;
+    padding: 5rem;
+    margin-top: 2rem;
   }
 }
